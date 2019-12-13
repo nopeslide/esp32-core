@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: build image
       run: make -C docker docker-platformio
-    - name: build
+    - name: build binary
       run: make -C docker pio DOCKEROPTS=--tty=false EXEC="pio run"
